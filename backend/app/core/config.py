@@ -36,7 +36,7 @@ class Settings:
     AI_ENABLED: bool = os.getenv("AI_ENABLED", "true").lower() == "true"
     AI_CACHE_MINUTES: int = int(os.getenv("AI_CACHE_MINUTES", "15"))
     CORS_ORIGINS: list = os.getenv(
-        "CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173","https://ubti-mediflow.web.app"
+        "CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173,https://ubti-mediflow.web.app"
     ).split(",")
 
     @property
